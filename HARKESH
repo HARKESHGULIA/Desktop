@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        color: orange;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        background-color: black;
+        padding: 0 20px;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: yellow;
+      }
+      main hr {
+        border: 0;
+        background-color: white;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1rem;
+        color: white;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+        color: white;
+      }
+      .leftsection {
+        font-size: 1rem;
+      }
+      .leftsection .btn {
+        padding: 12px;
+      }
+      .firstsection > div {
+        width: 40%;
+      }
+      .rightsection img {
+        margin: 50px 0;
+        width: 80%;
+      }
+      .blue {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        padding: 50px 0;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+        color: white;
+      }
+      .box {
+        display: flex;
+        justify-content: space-between;
+        margin: 56px 0;
+        height: 2px;
+        width: 80vw;
+        background: white;
+      }
+      .vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        text-align: center;
+        height:105px;
+        background-color: white;
+      }
+      .vertical img {
+        width: 50px;
+      }
+      .vertical-title {
+        font-size: 1.2rem;
+        color: purple;
+        margin-top: 10px;
+      }
+      .vertical-desc {
+        font-size: 0.9rem;
+        color: purple;
+        margin-top: 5px;
+      }
+      footer{
+        background-color: purple;
+        height: 100px;
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">HARKESH'S PORTFOLIO</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">ABOUT</a></li>
+            <li><a href="/">SERVICES</a></li>
+            <li><a href="/">PROJECTS</a></li>
+            <li><a href="/">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          HI, MY NAME IS <span class="blue">HARKESH</span>  
+          <div>I am a student at IIC (South Campus, DU)</div>
+          <div>I am passionate about</div>
+          <span id="element"></span>
+        <div class="buttons">
+            <button class="btn"> DOWNLOAD RESUME</button>
+            <button class="btn"> VISIT GITHUB</button>
+        </div>
+        </div>
+        <div class="rightsection">
+          <img src="https://www.portfolio.hu/" alt="Portfolio Image" />
+        </div>
+      </section>
+      <hr>
+      <section class="secondsection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Qualifications</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="developer.png" alt="" />
+            <div class="vertical-title">10th (2017-2018)</div>
+            <div class="vertical-desc">INSTITUTE: RNS Rewari, CGPA: 10</div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">12th (2018-2019)</div>
+            <div class="vertical-desc">INSTITUTE: RNS Rewari, %: 88.4</div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">Graduation (2020-2023)</div>
+            <div class="vertical-desc">Institute: Bhaskarcharya College, CGPA: 7.608</div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">Post-Graduation (2023-2025)</div>
+            <div class="vertical-desc">University of Delhi, CGPA: 7.5</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>harkesh's portfolio</h2>
+            </div>
+            <div class="footer-secondsecond">
+
+            </div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['C++', 'JAVA', 'DSA', 'HTML&CSS'],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
